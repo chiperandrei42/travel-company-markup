@@ -1,0 +1,212 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+:root {
+    --main-section-font-color: #181E4B;
+    --light-blue: #4475F2;
+    --page-font: 'Plus Jakarta Sans', sans-serif;
+    --inactive-color: #9A9EA6;
+}
+
+body {
+    font-family: var(--page-font);
+    text-decoration: none;
+    margin-left:122px;
+    margin-right:122px;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    margin:0;
+}
+
+.logo {
+    color:black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar1 {
+    display:flex;
+    align-items: center;
+    gap:40px;
+    padding-top:12px;
+    padding-bottom:12px;
+    text-wrap: nowrap;
+    color:var(--inactive-color);
+}
+
+.default-svg {
+    width:20px;
+    height:20px;
+}
+
+.searchbar {
+    height:48px;
+    width:100%;
+    border: 0px;
+    background-color: #F0F1F2;
+    border-radius:30px;
+    padding-left: 48px;
+    font-family: var(--page-font);
+    font-size:12px;
+}
+
+.searchbar:focus {
+    outline: none;
+}
+
+.search-icon {
+position: absolute;
+left:260px;
+fill:var(--inactive-color);
+}
+
+.location-select {
+    fill:var(--inactive-color);
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap:6px;
+}
+
+.location-specific {
+    display:flex;
+    flex-direction: column;
+}
+
+.location-ul {
+    display: flex;
+}
