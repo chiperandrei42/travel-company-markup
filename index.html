@@ -19,27 +19,50 @@
   <body>
     <header>
       <div class="navbar1">
-        <a href="index.html"><h1 class="logo">Destinize</h1></a>
-        <svg class="search-icon default-svg">
-          <use href="./symbol-defs.svg#icon-search"></use>
-        </svg>
-        <input
-          class="searchbar"
-          type="text"
-          placeholder="Cari apapun disini..."
-        />
+        <div class="logo-container">
+          <a href="index.html">
+            <svg class="logo-svg default-svg">
+              <use href="./symbol-defs.svg#icon-logo"></use>
+            </svg>
+            <h1 class="logo">Destinize</h1>
+          </a>
+        </div>
+        <div class="searchbar-container">
+          <svg class="search-icon default-svg">
+            <use href="./symbol-defs.svg#icon-search"></use>
+          </svg>
+          <input
+            class="searchbar"
+            type="text"
+            placeholder="Cari apapun disini..."
+          />
+        </div>
         <p class="location">
           <svg class="location-select default-svg">
             <use href="./symbol-defs.svg#icon-network"></use>
           </svg>
           Bahasa Indonesia
+          <svg class="drop-menu-icon default-svg">
+            <use href="./symbol-defs.svg#icon-drop-menu"></use>
+          </svg>
         </p>
-        <svg class="map-pin default-svg">
-          <use href="./symbol-defs.svg#icon-map-pin"></use>
-        </svg>
         <div class="location-wrapper">
-          <p>Lokasi</p>
-          <p>Indonesia, Yogyakarta</p>
+          <div class="map-pin-wrapper">
+            <a href="#">
+              <svg class="map-pin default-svg" width="20" height="20">
+                <use href="./symbol-defs.svg#icon-map-pin"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="location-second-wrapper">
+            <div class="location-text">
+              <p id="small-12px-text">Lokasi</p>
+              <p class="medium-16px-text">Indonesia, Yogyakarta</p>
+            </div>
+            <svg class="drop-menu-icon default-svg">
+              <use href="./symbol-defs.svg#icon-drop-menu"></use>
+            </svg>
+          </div>
         </div>
       </div>
       <hr />

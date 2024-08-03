@@ -71,14 +71,7 @@ header,
 hgroup,
 menu,
 nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+section {
     margin: 0;
     padding: 0;
     border: 0;
@@ -128,18 +121,22 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 :root {
-    --main-section-font-color: #181E4B;
-    --light-blue: #4475F2;
+    --main-section-font-color: #181e4b;
+    --light-blue: #4475f2;
     --page-font: 'Plus Jakarta Sans', sans-serif;
-    --inactive-color: #9A9EA6;
+    --inactive-color: #9a9ea6;
+    --small-text: 12px;
+    --between-small-and-medium: 14px;
+    --medium-text: 16px;
 }
 
 body {
     font-family: var(--page-font);
     text-decoration: none;
-    margin-left:122px;
-    margin-right:122px;
+    margin-left: 122px;
+    margin-right: 122px;
 }
 
 a {
@@ -147,39 +144,55 @@ a {
 }
 
 hr {
-    margin:0;
+    margin: 0;
+    border: none;
+    height: 1px;
+    background-color: var(--inactive-color);
+    width: 100vw;
+    position: relative;
+    left: -122px;
 }
 
 .logo {
-    color:black;
+    color: black;
     font-weight: bold;
     font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .navbar1 {
-    display:flex;
+    display: flex;
     align-items: center;
-    gap:40px;
-    padding-top:12px;
-    padding-bottom:12px;
+    gap: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     text-wrap: nowrap;
-    color:var(--inactive-color);
+    color: var(--inactive-color);
 }
 
 .default-svg {
-    width:20px;
-    height:20px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.searchbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
 }
 
 .searchbar {
-    height:48px;
-    width:100%;
+    height: 48px;
+    width: 100%;
     border: 0px;
-    background-color: #F0F1F2;
-    border-radius:30px;
+    background-color: #f0f1f2;
+    border-radius: 30px;
     padding-left: 48px;
     font-family: var(--page-font);
-    font-size:12px;
+    font-size: 12px;
 }
 
 .searchbar:focus {
@@ -187,26 +200,166 @@ hr {
 }
 
 .search-icon {
-position: absolute;
-left:260px;
-fill:var(--inactive-color);
+    position: absolute;
+    left: 16px;
+    fill: var(--inactive-color);
 }
 
 .location-select {
-    fill:var(--inactive-color);
+    fill: var(--inactive-color);
+    padding-top: 2px;
 }
 
 .location {
     display: flex;
     align-items: center;
-    gap:6px;
+    gap: 6px;
 }
 
-.location-specific {
-    display:flex;
+.location-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    cursor: pointer;
+    position: relative;
+    /* Added for positioning the border */
+}
+
+.location-wrapper svg {
+    transition: 0.3s;
+}
+
+.location-text {
+    display: flex;
     flex-direction: column;
 }
 
-.location-ul {
+.location-text p {
+    margin: 0;
+}
+
+.map-pin {
+    fill: var(--inactive-color);
+}
+
+#small-12px-text {
+    font-size: var(--small-text);
+    color: var(--inactive-color);
+}
+
+.medium-16px-text {
+    font-size: var(--medium-text);
+    padding-top: 2.5px;
+}
+
+.drop-menu-icon {
+    fill: var(--inactive-color);
+    padding-top: 3px;
+}
+
+.logo-container {
     display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+    height: 28px;
+    fill: #4475f2;
+    padding-top: 2.5px;
+}
+
+.location:hover {
+    color: #4475f2;
+    cursor: pointer;
+}
+
+.location:hover svg {
+    fill: #4475f2;
+}
+
+.location {
+    transition: 0.3s;
+}
+
+.location svg {
+    transition: 0.3s;
+}
+
+.location-second-wrapper {
+    display: flex;
+    gap: 4px;
+    transition: 0.3s;
+}
+
+.location-second-wrapper svg {
+    padding-top: 14px;
+}
+
+.location-wrapper:hover {
+    color: #4475f2;
+}
+
+.location-wrapper:hover svg {
+    fill: #4475F2;
+}
+
+/* Other CSS rules remain the same */
+
+/* New styles for the map pin bubble effect */
+.map-pin-wrapper {
+    position: relative;
+    /* Required for positioning the pseudo-element */
+    width: 48px;
+    /* Set width for the bubble */
+    height: 48px;
+    /* Set height for the bubble */
+    display: flex;
+    /* Align children in the center */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+.map-pin-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    /* Align to the top */
+    left: 0;
+    /* Align to the left */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    background-color: #E3EBFD;
+    /* Fill color */
+    /* Start with a transparent border */
+    border-radius: 50%;
+    /* Round border */
+    transition: border-color 0.3s ease, opacity 0.3s ease;
+    /* Smooth transition for border color and opacity */
+    opacity: 0;
+    /* Start invisible */
+}
+
+.location-wrapper:hover .map-pin-wrapper::after {
+    border-color: transparent;
+    /* Keep border transparent on hover */
+    opacity: 1;
+    /* Make the bubble visible on hover */
+}
+
+/* Make the map pin visible */
+.map-pin {
+    fill: var(--inactive-color);
+    /* Set the fill color of the map pin */
+    position: relative;
+    /* Required for z-index */
+    z-index: 1;
+    /* Make sure it's above the bubble */
 }
