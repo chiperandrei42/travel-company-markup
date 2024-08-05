@@ -103,6 +103,7 @@ body {
     margin-left: 122px;
     margin-right: 122px;
 }
+
 html,
 body {
     max-width: 100%;
@@ -380,7 +381,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom:26px;
+    padding-bottom: 26px;
 }
 
 .icon-border {
@@ -410,67 +411,68 @@ hr {
 }
 
 .explore-indonesia {
-    padding-left:15px;
-    display:flex;
+    padding-left: 15px;
+    display: flex;
     flex-direction: row;
-    padding-top:37px;
+    padding-top: 37px;
 }
+
 .explore-indonesia-text {
-    color:#4F7DF3;
-    font-weight:bold;
+    color: #4F7DF3;
+    font-weight: bold;
     border: 1px solid transparent;
     background-color: #E5EDFF;
-    border-radius:39px;
+    border-radius: 39px;
     padding: 10px 25px;
-    cursor:default;
+    cursor: default;
     user-select: none;
-        -moz-user-select: none;
-        -webkit-text-select: none;
-        -webkit-user-select: none;
-        margin-bottom: 12px;
-        width:270px;
+    -moz-user-select: none;
+    -webkit-text-select: none;
+    -webkit-user-select: none;
+    margin-bottom: 12px;
+    width: 270px;
 }
 
 .explore-indonesia-heading {
-    font-weight:800;
+    font-weight: 800;
     font-size: 76px;
-    width:660px;
-    color:#181E4B;
-    padding-bottom:26px;
+    width: 660px;
+    color: #181E4B;
+    padding-bottom: 26px;
     line-height: 89px;
 }
 
 .explore-indonesia-heading span {
-    color:#4475F2;
+    color: #4475F2;
 }
 
 .image-wrapper-explore-indonesia img {
-    width:100%;
-    height:auto;
+    width: 100%;
+    height: auto;
     max-width: 750px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .explore-indonesia-paragraph {
-    color:#5E6282;
-    width:477px;
-    line-height:30px;
-    font-size:16px;
-    padding-bottom:34px;
+    color: #5E6282;
+    width: 477px;
+    line-height: 30px;
+    font-size: 16px;
+    padding-bottom: 34px;
 }
 
 .from-now-on {
     background-color: var(--active-color);
     border: none;
     font-family: var(--page-font);
-    color:#FFFFFF;
+    color: #FFFFFF;
     padding: 20px 17px;
-    border-radius:10px;
-    cursor:pointer;
-    transition:0.3s;
-    font-size:16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
 }
 
 .from-now-on:hover {
@@ -478,36 +480,36 @@ hr {
 }
 
 .buttons {
-    display:flex;
-    gap:40px;
+    display: flex;
+    gap: 40px;
 }
 
 .putar-demo {
     font-family: var(--page-font);
-    color:#686D77;
-    border:1px solid #4475F2;
+    color: #686D77;
+    border: 1px solid #4475F2;
     background-color: #FFFFFF;
     padding: 20px 17px;
-    border-radius:20px;
-    font-size:17px;
-    cursor:pointer;
-    transition:0.3s
+    border-radius: 20px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s
 }
 
 .putar-demo:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     background-color: var(--active-color);
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 
 .putar-demo span {
-    color:var(--active-color);
-    padding-right:10px;
+    color: var(--active-color);
+    padding-right: 10px;
     transition: 0.3s;
 }
 
 .putar-demo:hover span {
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 
 .main-section {
@@ -517,13 +519,14 @@ hr {
 .airlines {
     display: flex;
     justify-content: space-evenly;
-    height:140px;
-    padding-bottom: 153px;
+    height: 140px;
+    padding-top: 76px;
+    padding-bottom: 76px;
 }
 
 .airlines img {
     padding: 0px 50px;
-    transition:0.3s;
+    transition: 0.3s;
     border-radius: 10px;
 }
 
@@ -535,7 +538,7 @@ hr {
 .destinasi-text {
     letter-spacing: 9.5%;
     font-weight: 800;
-    color:var(--active-color);
+    color: var(--active-color);
 }
 
 .destinasi-heading {
@@ -543,18 +546,18 @@ hr {
     font-size: 48px;
     margin: 0;
     padding-top: 13px;
+    padding-bottom: 46px;
 }
 
 .favourite-destinations {
     display: flex;
     flex-direction: column;
-    /* Stacks the elements vertically */
+    padding-bottom: 150px;
 }
 
 .destinasi-link-wrapper {
     display: flex;
     justify-content: flex-end;
-    /* Aligns the link to the right */
 }
 
 .destinasi-link {
@@ -566,7 +569,127 @@ hr {
 }
 
 .link-arrow {
-    width:17px;
-    height:17px;
-    fill:#4737FF;
+    width: 17px;
+    height: 17px;
+    fill: #4737FF;
+}
+
+.image-wrapper-destinations {
+    display: flex;
+    gap: 26px;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+    width: 280px;
+    height: 392px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+        0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+}
+
+.image-container:hover img {
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.24),
+        0 40px 80px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image-card-wrapper {
+    position: absolute;
+    bottom: 0px;
+    background-color: rgb(255, 255, 255, 70%);
+    padding-left: 26px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 26px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 9px;
+    backdrop-filter: blur(2px);
+    cursor: default;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-text-select: none;
+    -webkit-user-select: none;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 2;
+}
+
+.image-card-wrapper p {
+    font-weight: 500;
+    font-size: 15px;
+    color: #80918E;
+}
+
+.reservasi-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reservasi-items-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
+}
+
+.reservasi-item {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.reservasi-item svg {
+    flex-shrink: 0;
+    border: 1px solid transparent;
+    border-radius: 13px;
+    padding: 10px 13px;
+    background-color: #EFE0B4;
+}
+
+.reservasi-item div {
+    display: flex;
+    flex-direction: column;
+}
+
+.reservasi-h4-text {
+    color: #5E6282;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.reservasi-p-text {
+    width: 351px;
+    color: #5E6282;
+    font-size: 16px;
+}
+
+.reservasi-heading {
+    font-weight: 800;
+    font-size: 50px;
+    width: 500px;
+    padding-top: 9px;   
+}
+
+.image-wrapper-reservasi {
+    max-width: 520px;
+    max-height: 430px;
+    margin-left:auto;
+    position:relative;
+    bottom:100px;
+}
+
+.image-wrapper-reservasi img {
+    width: 100%;
+    height: auto;
 }
