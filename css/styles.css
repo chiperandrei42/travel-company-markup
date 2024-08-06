@@ -102,6 +102,7 @@ body {
     text-decoration: none;
     margin-left: 122px;
     margin-right: 122px;
+    overflow: visible;
 }
 
 html,
@@ -346,7 +347,7 @@ hr {
 .nav-locations-wrapper {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 25px;
     padding-top: 24px;
     padding-bottom: 24px;
 }
@@ -692,4 +693,82 @@ hr {
 .image-wrapper-reservasi img {
     width: 100%;
     height: auto;
+}
+
+.location-section-title {
+    font-weight: 800;
+    letter-spacing: 9.5%;
+    font-size:18px;
+    color:#4737FF;
+}
+
+.cari-tempat-heading {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:19px;
+}
+
+.cari-tempat-h2 {
+    font-weight:800;
+    font-size:56px;
+}
+
+.cari-tempat-paragraph {
+    font-size:18px;
+    text-align:center;
+    width:800px;
+    line-height:32px;
+    padding-bottom:45px;
+}
+
+.image-wrapper-cari-tempat {
+    display:flex;
+    justify-content: center;
+}
+
+.image-wrapper-cari-tempat img {
+    max-width:100%;
+    height:auto;
+    padding-bottom:55px;
+}
+
+.cari-tempat-paragraphs {
+    display:flex;
+    justify-content: center;
+    gap:60px;
+}
+
+.cari-tempat-card {
+    width:350px;
+    display:flex;
+    gap:31px;
+}
+
+.cari-tempat-card h4 {
+    font-weight:800;
+    color:#18214D;
+    line-height:30px;
+}
+
+.cari-tempat-card p {
+    font-weight:500;
+    color:#3E4462;
+    line-height:26px;
+}
+.cari-tempat-card svg {
+    width:24px;
+    height:24px;
+    flex-shrink: 0;
+    position:relative;
+    top:15px;
+    border:0px solid transparent;
+    padding:12px;
+    border-radius:50%;
+    background-color:#EFF2F6;
+}
+
+.mengenal-destinize-section {
+    padding-top: 170px;
 }
