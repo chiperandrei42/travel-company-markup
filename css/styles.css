@@ -925,6 +925,7 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
     display:flex;
     gap:52px;
     justify-content: center;
+    padding-bottom:200px;
 }
 
 .testimonial-destinize-card img {
@@ -953,4 +954,74 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
     font-weight:600;
     color:#252b42;
     line-height:24px;
+}
+
+.faq-heading-text {
+    font-weight:800;
+    font-size:48px;
+    padding-bottom:88px;
+}
+
+.dropdown-button {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--page-font);
+    height: 69px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #d3d3d3;
+    border-bottom:none;
+    width: 100%;
+    cursor: pointer;
+    padding-left: 25px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.dropdown-button.clicked {
+    background-color: #ebebeb;
+    color: #23a6f0;
+    outline: none;
+}
+
+.dropdown-button.clicked svg {
+    background-color: #23A6F0;
+    fill: white;
+    border: 1px solid #23A6F0;
+}
+
+.dropdown-arrow {
+    height: 12px;
+    width: 12px;
+    margin-right: 40px;
+    border-radius: 50%;
+    padding: 7px;
+    border: 1px solid #d3d3d3;
+    fill: #737373;
+    transition: 0.3s;
+}
+
+.dropdown-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    padding: 0 132px;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    background-color: white;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease, padding 0.3s ease;
+    transition:0.3s;
+}
+
+.dropdown-text.show {
+    padding: 6px 132px 42px 35px;
+    height: auto;
+    background-color:#ebebeb;
+}
+
+.dropdown-button-wrapper {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
