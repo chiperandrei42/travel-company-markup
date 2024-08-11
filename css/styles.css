@@ -1023,5 +1023,76 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
 }
 
 .dropdown-button-wrapper {
+    margin-bottom:201px;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.banner-before-footer {
+    display: flex;
+    width: 100%;
+    /* Ensure container takes the full width */
+    background-color: #4372EB;
+    border-radius: 16px;
+    justify-content: space-between;
+    margin-bottom: 201px;
+    padding: 40px 48px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    overflow: hidden;
+    /* Ensure image does not overflow the container */
+    position: relative;
+    height: 298px;
+    max-width: 100%;
+    width:auto;
+    /* Position relative for absolute positioning of image */
+}
+
+.banner-before-footer img {
+    width: auto;
+    height: 100%;
+    /* Adjust to cover the full height of the container */
+    position: absolute;
+    right: 0;
+    /* Align image to the right */
+    top: 0;
+    /* Align image to the top */
+    bottom: 0;
+    object-fit: cover;
+    /* Ensure the image covers the area without stretching */
+    border-radius: 16px;
+    /* Ensure image respects border-radius */
+}
+
+.banner-before-footer-h3 {
+    font-weight: 800;
+    color: white;
+    font-size: 40px;
+    width: 462px;
+}
+
+.banner-before-footer-p {
+    font-size: 18px;
+    width: 444px;
+    line-height: 32px;
+    color: #F1F2F6;
+}
+
+.banner-before-footer-a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #cacbce;
+    width: 160px;
+    transition: 0.2s;
+}
+
+.banner-before-footer-a:hover {
+    color: white;
+}
+
+.banner-before-footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    z-index: 1;
+    /* Ensure text content is above the image */
 }
