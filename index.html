@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The best site for booking vacations">
+    <meta name="keywords" content="Airplane, Flight, Vacation, Booking">
+    <meta name="author" content="Chiper Andrei">
     <title>Destinize</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,15 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <div class="navbar1">
+      <nav class="navbar1">
         <div class="logo-container">
           <a href="index.html">
             <svg class="logo-svg default-svg">
@@ -62,7 +61,7 @@
             </svg>
           </div>
         </div>
-      </div>
+      </nav>
       <hr />
       <div class="locations-and-icons-wrapper">
         <ul class="nav-locations-wrapper">
@@ -149,9 +148,9 @@
           </div>
         </div>
         <div class="airlines">
-          <img src="./images/axon.jpg" alt="airline logo" />
-          <img src="./images/expedia.jpg" alt="airline logo" />
-          <img src="./images/qantas.jpg" alt="airline logo" />
+          <img src="./images/axon.jpg" alt="airline logo" height="140" width="auto" />
+          <img src="./images/expedia.jpg" alt="airline logo" height="140" width="auto" />
+          <img src="./images/qantas.jpg" alt="airline logo" height="140" width="auto" />
         </div>
         <div class="favourite-destinations">
           <p class="destinasi-text">DESTINASI FAVORIT</p>
@@ -173,7 +172,7 @@
                 height="392"
               />
               <div class="image-card-wrapper">
-                <h4 class="image-card card-title">Raja Ampat</h4>
+                <h2 class="image-card card-title">Raja Ampat</h2>
                 <p class="image-card">Bali</p>
               </div>
             </div>
@@ -185,7 +184,7 @@
                 height="392"
               />
               <div class="image-card-wrapper">
-                <h4 class="image-card card-title">Labuan Bajo</h4>
+                <h2 class="image-card card-title">Labuan Bajo</h2>
                 <p class="image-card">NTT</p>
               </div>
             </div>
@@ -197,7 +196,7 @@
                 height="392"
               />
               <div class="image-card-wrapper">
-                <h4 class="image-card card-title">Kawah Ijen</h4>
+                <h2 class="image-card card-title">Kawah Ijen</h2>
                 <p class="image-card">Jawa Timpur</p>
               </div>
             </div>
@@ -209,7 +208,7 @@
                 height="392"
               />
               <div class="image-card-wrapper">
-                <h4 class="image-card card-title">Bromo</h4>
+                <h2 class="image-card card-title">Bromo</h2>
                 <p class="image-card">Jawa Timpur</p>
               </div>
             </div>
@@ -224,7 +223,7 @@
                 <use href="./symbol-defs.svg#icon-magnifying"></use>
               </svg>
               <div>
-                <h4 class="reservasi-h4-text">Cari tempat yang kamu mau</h4>
+                <h2 class="reservasi-h2-text">Cari tempat yang kamu mau</h2>
                 <p class="reservasi-p-text">
                   Temukan destinasi selanjutnya yang akan kamu kunjungi dengan
                   Destinize
@@ -236,9 +235,9 @@
                 <use href="./symbol-defs.svg#icon-pencil"></use>
               </svg>
               <div>
-                <h4 class="reservasi-h4-text">
+                <h2 class="reservasi-h2-text">
                   Isi data dan konfirmasi pembayaran
-                </h4>
+                </h2>
                 <p class="reservasi-p-text">
                   Tulis dan lengkapi data kamu untuk keperluan data booking
                 </p>
@@ -249,7 +248,7 @@
                 <use href="./symbol-defs.svg#icon-compass"></use>
               </svg>
               <div>
-                <h4 class="reservasi-h4-text">Tinggal masuk dan enjoy!</h4>
+                <h2 class="reservasi-h2-text">Tinggal masuk dan enjoy!</h2>
                 <p class="reservasi-p-text">
                   Kamu bisa langsung masuk dan enjoy liburan kamu tanpa hambatan
                 </p>
@@ -282,7 +281,7 @@
             <div class="cari-tempat-card">
               <svg><use href="./symbol-defs.svg#icon-map-pin"></use></svg>
               <div>
-                <h4>Populer di dekatmu</h4>
+                <h2>Populer di dekatmu</h2>
                 <p>
                   Tempat pariwisata yang populer dan pasti dikenal semua orang
                   didekatmu
@@ -292,7 +291,7 @@
             <div class="cari-tempat-card">
               <svg><use href="./symbol-defs.svg#icon-heart"></use></svg>
               <div>
-                <h4>Favorit di dekatmu</h4>
+                <h2>Favorit di dekatmu</h2>
                 <p>
                   Tempat favorit dan disukai semua orang orang di sekitar daerah
                   kamu
@@ -302,7 +301,7 @@
             <div class="cari-tempat-card">
               <svg><use href="./symbol-defs.svg#icon-group-outline"></use></svg>
               <div>
-                <h4>Ramai di didekatmu</h4>
+                <h2>Ramai di didekatmu</h2>
                 <p>
                   Spot yang paling ramai dikunjungi para warga sekaligus para
                   wisatawan
@@ -324,7 +323,7 @@
           <h2 class="destinasi-heading">• Galeri Pariwisata & Blog Travel</h2>
           <div class="images-wrapper-mengenal-destinize">
             <div class="mengenal-destinize-card-wrapper">
-              <img src="./images/montains-and-sunset.jpg" />
+              <img src="./images/montains-and-sunset.jpg" alt="picture of sunset and mountains"/>
               <p class="card-date-p">26 DESEMBER 2021</p>
               <h3 class="card-h3">
                 Tips naik gunung Bromo Biar gak capek cyin
@@ -366,7 +365,7 @@
               Destinize membantu saya Mencari spot tempat wisata baru di
               Indonesia dengan Mudah
             </p>
-            <img src="./images/rating.jpg" height="22" />
+            <img src="./images/rating.jpg" height="22" alt="image of 4 stars rating"/>
             <p class="testimonial-name">Sandhika Galih</p>
             <p class="testimonial-occupation">Dosen di WPU</p>
           </div>
@@ -381,7 +380,7 @@
               Destinize membantu saya mendapatkan jodoh, tidak disangka bahwa
               jodoh saya adalah CS nya
             </p>
-            <img src="./images/rating.jpg" height="22" />
+            <img src="./images/rating.jpg" height="22" alt="image of 4 stars rating"/>
             <p class="testimonial-name">Syauqizaidan Khairan Khalaf</p>
             <p class="testimonial-occupation">Mahasiswa di WPU</p>
           </div>
@@ -396,7 +395,7 @@
               Bikini Bottom menjadi sangat ramai dikunjungi saat saya
               memasukkannya di Destinize
             </p>
-            <img src="./images/rating.jpg" height="22" />
+            <img src="./images/rating.jpg" height="22" alt="image of 4 stars rating"/>
             <p class="testimonial-name">Petrik Sesat</p>
             <p class="testimonial-occupation">Warga di Bikini Bottom</p>
           </div>
@@ -441,7 +440,7 @@
         <p class="banner-before-footer-p">Tenang, kami mempunyai fitur rekomendasi yang membantu kamu mencari tempat berlibur yang tepat dengan menjawab pertanyaan yang kami berikan.</p>
         <a class="banner-before-footer-a" href="#">Mulai sekarang <span>></span></a>
         </div>
-        <img src="./images/woman-drawing.png">
+        <img src="./images/woman-drawing.png" alt="drawing of a woman">
       </div>
     </main>
     <script src="script.js"></script>
