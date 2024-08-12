@@ -1034,36 +1034,28 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
 .banner-before-footer {
     display: flex;
     width: 100%;
-    /* Ensure container takes the full width */
     background-color: #4372EB;
     border-radius: 16px;
     justify-content: space-between;
-    margin-bottom: 201px;
+    margin-bottom: 211px;
     padding: 40px 48px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     overflow: hidden;
-    /* Ensure image does not overflow the container */
     position: relative;
     height: 298px;
     max-width: 100%;
     width:auto;
-    /* Position relative for absolute positioning of image */
 }
 
 .banner-before-footer img {
     width: auto;
     height: 100%;
-    /* Adjust to cover the full height of the container */
     position: absolute;
     right: 0;
-    /* Align image to the right */
     top: 0;
-    /* Align image to the top */
     bottom: 0;
     object-fit: cover;
-    /* Ensure the image covers the area without stretching */
     border-radius: 16px;
-    /* Ensure image respects border-radius */
 }
 
 .banner-before-footer-h3 {
@@ -1099,4 +1091,60 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
     gap: 32px;
     z-index: 1;
     /* Ensure text content is above the image */
+}
+
+.footer-contact-details {
+display:flex;
+flex-direction: column;
+justify-content: center;
+gap:20px;
+font-size:14px;
+}
+
+.footer-contact-details a {
+    color: #9A9EA6;
+    width:fit-content;
+    transition:0.3s;
+}
+
+.footer-contact-details a:hover  {
+    color: #4475F2;
+}
+
+.footer-contact-details svg {
+    padding-right:6px;
+    fill: #9A9EA6;
+}
+
+.logo-and-paragraph-wrapper{
+    display:flex;
+    gap:16px;
+    flex-direction: column;
+    color:#9A9EA6;
+    line-height:24px;
+    padding-bottom:32px;
+}
+
+.logo-and-paragraph-wrapper span {
+    color:#4475F2;
+    font-weight: bold;
+}
+
+.footer-h3 {
+    font-size:24px;
+    font-weight: bold;
+    color: black;
+}
+
+.footer-paragraph {
+    width:560px;
+}
+
+.copyright-p {
+    padding-top:16px;
+    color:#9a9ea6;
+}
+
+.footer-contacts {
+    margin-bottom:48px;
 }
