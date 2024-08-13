@@ -657,7 +657,7 @@ box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     flex-direction: column;
 }
 
-.reservasi-h4-text {
+.reservasi-h2-text {
     color: #5E6282;
     padding-bottom: 5px;
     font-weight: bold;
@@ -1147,4 +1147,44 @@ font-size:14px;
 
 .footer-contacts {
     margin-bottom:48px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tentang-support-faq-wrapper {
+    display:flex;
+    flex-direction: column;
+    gap:72px;
+}
+
+.tentang-support-faq-wrapper p {
+    font-weight: bold;
+    padding-bottom:4px;
+    font-size:18px;
+}
+
+.tentang-support-faq-wrapper ul {
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.tentang-support-faq-wrapper a {
+    color: #9a9ea6;
+    font-size: 14px;
+    transition:0.2s;
+}
+
+.tentang-support-faq-wrapper a:hover {
+    color: #4475F2;
+}
+
+.footer-links {
+    display:flex;
+    gap:40px;
+    padding-top:23px;
+}
+
+.footer-ul {
+    display:flex;
+    gap:152px;
 }
